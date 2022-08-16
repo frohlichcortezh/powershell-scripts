@@ -1,6 +1,5 @@
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme M365Princess
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json"
+
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
