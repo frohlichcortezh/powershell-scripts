@@ -19,5 +19,7 @@ You can see your powershell profile with
 notepad $PROFILE
 ```
 The file ```Microsoft.PowerShell_profile.ps1``` configures the use of:
-* posh-git, oh-my-posh with M365Princess theme.
+* [posh-git/oh-my-posh](https://ohmyposh.dev/docs/segments/poshgit) with [M365Princess](https://ohmyposh.dev/docs/themes#m365princess) theme.
 * Configure auto-complete with tab and history with arrow keys.
+  * [How to](https://dev.to/dhravya/how-to-add-autocomplete-to-powershell-in-30-seconds-2a8p)
+  * [Official doc](https://github.com/PowerShell/PSReadLine)
