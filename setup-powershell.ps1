@@ -1,3 +1,10 @@
+$currentUser = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
+$isAdmin = $currentUser.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+if (-not $isAdmin) {
+    Write-Warning "This script is not running with administrative privileges."
+    Exit 1
+} 
+
 # REF: https://docs.microsoft.com/fr-fr/powershell/scripting/gallery/installing-psget?view=powershell-7.2
 
 Install-PackageProvider -Name NuGet -Force

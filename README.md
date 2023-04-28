@@ -8,9 +8,19 @@ Clone this repo
 git clone https://github.com/frohlichcortezh/powershell-scripts.git
 ```
 
+Allow powershell scripts to be run:
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+
+
 ## Setup powershell
 
 Install needed modules and copies the profile from ```Microsoft.PowerShell_profile.ps1```
+```
+cd powershell-scripts
+.\setup-powershell.ps1
+```
 
 ## Powershell profile 
 
